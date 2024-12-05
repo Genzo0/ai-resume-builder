@@ -27,5 +27,9 @@ export default function ManageSubscriptionButton() {
     }
   }
 
-  return <Button onClick={() => handleClick()}>Manage Subscription</Button>;
+  return (
+    <Button onClick={() => handleClick()} disabled={loading}>
+      Manage Subscription
+    </Button>
+  );
 }
